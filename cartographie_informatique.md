@@ -86,168 +86,480 @@
 
 ## Réseaux & Télécommunications
 
----
+- Modèles de Réseau
 
-### Modèles de Réseau
+  - OSI (Open Systems Interconnection)
+  - TCP/IP (Transmission Control Protocol / Internet Protocol)
 
-- OSI (Open Systems Interconnection)
-- TCP/IP (Transmission Control Protocol / Internet Protocol)
+- Switching, Routing & VLAN
 
----
+  - Switching : STP (Spanning Tree Protocol), RSTP, MSTP
+  - VLAN, VTP (VLAN Trunking Protocol)
+  - LACP (Link Aggregation Control Protocol)
+  - Routing : OSPF, BGP, RIP, EIGRP, IS-IS
 
-### Switching, Routing & VLAN
+- SDN (Software Defined Networking)
 
-- Switching : STP (Spanning Tree Protocol), RSTP, MSTP
-- VLAN, VTP (VLAN Trunking Protocol)
-- LACP (Link Aggregation Control Protocol)
-- Routing : OSPF, BGP, RIP, EIGRP, IS-IS
+  - OpenDaylight, ONOS, Cisco ACI
 
----
+- Analyse & Diagnostic
 
-### SDN (Software Defined Networking)
+  - Outils : Wireshark, Nmap, tcpdump, NetFlow, IPFIX, ntopng, sFlow, Syslog
 
-- OpenDaylight, ONOS, Cisco ACI
+- Protocoles Réseau Fondamentaux
 
----
+  - IPv4
+  - IPv6
 
-### Analyse & Diagnostic
+- Protocole IPv4
 
-- Outils : Wireshark, Nmap, tcpdump, NetFlow, IPFIX, ntopng, sFlow, Syslog
+  - ARP (Address Resolution Protocol)
+  - ICMP (Internet Control Message Protocol)
+  - IGMP (Internet Group Management Protocol)
+  - DHCP (Dynamic Host Configuration Protocol)
+  - DNS (Domain Name System)
 
----
+- Protocole IPv6
 
-### Protocoles Réseau Fondamentaux
+  - ICMPv6 (Internet Control Message Protocol for IPv6)
+  - NDP (Neighbor Discovery Protocol)
+  - DHCPv6 (Dynamic Host Configuration Protocol for IPv6)
+  - DNSSEC (DNS Security Extensions)
 
-- IPv4
-- IPv6
+- Protocoles de Transport
 
-#### Protocole IPv4
+  - TCP (Transmission Control Protocol)
+  - UDP (User Datagram Protocol)
+  - SCTP (Stream Control Transmission Protocol)
+  - DCCP (Datagram Congestion Control Protocol)
 
-- ARP (Address Resolution Protocol)
-- ICMP (Internet Control Message Protocol)
-- IGMP (Internet Group Management Protocol)
-- DHCP (Dynamic Host Configuration Protocol)
-- DNS (Domain Name System)
+- Protocoles d’Application
 
-#### Protocole IPv6
+  - HTTP / HTTPS
+  - FTP / SFTP / SCP
+  - SMTP, POP3, IMAP
+  - LDAP
+  - SIP, RTP, RTSP
+  - MQTT, CoAP
 
-- ICMPv6 (Internet Control Message Protocol for IPv6)
-- NDP (Neighbor Discovery Protocol)
-- DHCPv6 (Dynamic Host Configuration Protocol for IPv6)
-- DNSSEC (DNS Security Extensions)
+- Protocoles Multicast
 
----
+  - PIM (Protocol Independent Multicast)
+  - DVMRP (Distance Vector Multicast Routing Protocol)
+  - IGMP
 
-### Protocoles de Transport
+- Protocoles de Virtualisation & Overlay
 
-- TCP (Transmission Control Protocol)
-- UDP (User Datagram Protocol)
-- SCTP (Stream Control Transmission Protocol)
-- DCCP (Datagram Congestion Control Protocol)
+  - GRE (Generic Routing Encapsulation)
+  - VXLAN (Virtual Extensible LAN)
+  - NVGRE
+  - MPLS (Multiprotocol Label Switching)
 
----
+- Protocoles Sécurité & VPN
 
-### Protocoles d’Application
+  - IPSec
+  - SSL/TLS
+  - IKE
+  - L2TP, PPTP
+  - OpenVPN
+  - VPN entreprise : Cisco AnyConnect, FortiClient
+  - VPN grand public : ProtonVPN, NordVPN, ExpressVPN, Mullvad, TunnelBear
 
-- HTTP / HTTPS
-- FTP / SFTP / SCP
-- SMTP, POP3, IMAP
-- LDAP
-- SIP, RTP, RTSP
-- MQTT, CoAP
+- Protocoles de Gestion & Supervision
 
----
+  - SNMP (Simple Network Management Protocol)
+  - Syslog
+  - NetFlow, sFlow, IPFIX
+  - NTP (Network Time Protocol)
+  - RADIUS, TACACS+
 
-### Protocoles Multicast
+- Réseaux Sans Fil (Wi-Fi)
 
-- PIM (Protocol Independent Multicast)
-- DVMRP (Distance Vector Multicast Routing Protocol)
-- IGMP
+  - IEEE 802.11 a/b/g/n/ac/ax
+  - WPA2, WPA3
+  - Bluetooth (IEEE 802.15.1)
+  - LTE, 5G NR
 
----
+- IoT & Réseaux Bas Débit
 
-### Protocoles de Virtualisation & Overlay
-
-- GRE (Generic Routing Encapsulation)
-- VXLAN (Virtual Extensible LAN)
-- NVGRE
-- MPLS (Multiprotocol Label Switching)
-
----
-
-### Protocoles Sécurité & VPN
-
-- IPSec
-- SSL/TLS
-- IKE
-- L2TP, PPTP
-- OpenVPN
-- VPN entreprise : Cisco AnyConnect, FortiClient
-- VPN grand public : ProtonVPN, NordVPN, ExpressVPN, Mullvad, TunnelBear
-
----
-
-### Protocoles de Gestion & Supervision
-
-- SNMP (Simple Network Management Protocol)
-- Syslog
-- NetFlow, sFlow, IPFIX
-- NTP (Network Time Protocol)
-- RADIUS, TACACS+
-
----
-
-### Réseaux Sans Fil (Wi-Fi)
-
-- IEEE 802.11 a/b/g/n/ac/ax
-- WPA2, WPA3
-- Bluetooth (IEEE 802.15.1)
-- LTE, 5G NR
-
----
-
-### IoT & Réseaux Bas Débit
-
-- NB-IoT (Narrowband IoT)
-- LoRaWAN
-- Zigbee
-- Z-Wave
-- Thread
-- Sigfox
-
-
+  - NB-IoT (Narrowband IoT)
+  - LoRaWAN
+  - Zigbee
+  - Z-Wave
+  - Thread
+  - Sigfox
 
 - Virtualisation & Conteneurs
 
-  - VMware vSphere, ESXi, Proxmox, KVM, Xen, Hyper-V
-  - Docker, Podman, Buildah, Kaniko
-  - Kubernetes, OpenShift, Rancher, Helm, Istio, Linkerd
-  
-- Cloud computing (IaaS)
+  - Hyperviseurs & Virtualisation
 
-  - AWS, Azure, GCP
-  - Terraform, Ansible
+    - Type 1 : VMware vSphere, ESXi, Proxmox, KVM, Xen, Hyper-V
+    - Type 2 : VirtualBox, VMware Workstation, Parallels Desktop
+
+    - Concepts avancés :
+      - vMotion / Live Migration
+      - High Availability (HA)
+      - Fault Tolerance (FT)
+      - Clustering
+      - NUMA Awareness
+      - GPU Passthrough / SR-IOV
+
+  - Conteneurisation
+    
+    - Runtimes : Docker, containerd, CRI-O, runc, Kata Containers, Firecracker
+    - Builders : Docker, Podman, Buildah, Kaniko, BuildKit
+    - Registres : Docker Hub, Harbor, Quay.io, GitHub Container Registry, GCR, ECR
+
+  - Orchestration & Scheduling
+    
+    - Kubernetes Ecosystem : Kubernetes, OpenShift, Rancher, K3s, KIND, kubeadm, Minikube
+    - Gestion & Automatisation : Helm, Kustomize, ArgoCD, FluxCD, Tekton, Operators
+
+  - Réseau & Service Mesh
+    
+    - Service Mesh : Istio, Linkerd, Consul Connect, Kuma
+    - CNI Plugins : Flannel, Calico, Weave Net, Cilium
+
+  - Sécurité Conteneurs
+    
+    - Sécurité Runtime : SELinux, AppArmor, Seccomp, PodSecurityPolicies, OPA, Falco
+    - Scanning & Compliance : Trivy, Clair, Anchore, Docker Bench for Security, Kube-bench
+
+  - Stockage & Persistance
+    
+    - CSI Plugins : Ceph RBD, Longhorn, Portworx, OpenEBS
+    - Concepts : Persistent Volumes (PV), Persistent Volume Claims (PVC), StatefulSets
+
+  - Supervision & Observabilité
+    
+    - Monitoring & Tracing : Prometheus, Grafana, Thanos, Loki, Jaeger, OpenTelemetry
+
+  - Infrastructure as Code & Automation
+    
+    - Outils : Terraform, Ansible, Pulumi, Crossplane
+  
+- Cloud computing (IaaS, PaaS, SaaS, CaaS)
+
+  - IaaS
+    - AWS EC2, AWS EBS, AWS VPC, AWS Elastic IP
+    - Azure Virtual Machines, Azure Managed Disks, Azure Virtual Network
+    - Google Compute Engine, Google Persistent Disks, Google VPC
+    - OpenStack (plateforme cloud open source)
+    - DigitalOcean Droplets
+    - IBM Cloud Virtual Servers
+    - Oracle Cloud Infrastructure Compute
+    - VMware Cloud on AWS
+
+  - PaaS
+    - AWS Elastic Beanstalk, AWS Lambda (serverless)
+    - Azure App Service, Azure Functions
+    - Google App Engine, Google Cloud Functions
+    - Heroku
+    - Red Hat OpenShift (Kubernetes PaaS)
+    - Cloud Foundry
+    - Mendix, OutSystems (Low-code PaaS)
+    - IBM Cloud Foundry
+    - SAP Cloud Platform
+
+  - SaaS
+    - Microsoft 365, Google Workspace
+    - Salesforce, ServiceNow
+    - Dropbox, Box
+    - Slack, Microsoft Teams, Zoom
+    - Atlassian Jira, Confluence
+    - Adobe Creative Cloud
+    - Zendesk, Freshdesk
+    - GitHub, GitLab (en mode SaaS)
+
+  - CaaS
+    - AWS Fargate, Azure Container Instances, Google Cloud Run
+    - DigitalOcean App Platform
+    - Red Hat OpenShift (CaaS et PaaS)
+    - Rancher
+    - Docker Enterprise, Mirantis Kubernetes Engine
+    - Google Anthos (multi-cloud Kubernetes)
+    - VMware Tanzu
+    - Portainer
+
+  - Infrastructure as Code (IaC)
+    - Terraform, Pulumi
+    - AWS CloudFormation, Azure ARM Templates, Google Deployment Manager
+    - Ansible (provisioning)
+    - Chef, Puppet, SaltStack
+    - Packer
+
+  - Orchestration & Automation
+    - Kubernetes, OpenShift, Rancher, K3s, MicroK8s
+    - Helm, Kustomize (gestion des charts)
+    - ArgoCD, FluxCD (GitOps)
+    - Jenkins X, Tekton (CI/CD Kubernetes-native)
+    - Spinnaker
+
+  - Cloud Networking & Security
+    - AWS Security Groups, Network ACLs, AWS WAF, AWS Shield
+    - Azure NSG (Network Security Groups), Azure Firewall
+    - Google Cloud Firewall, Cloud Armor
+    - VPN CloudHub, AWS Transit Gateway
+    - Service Mesh : Istio, Linkerd, Consul Connect
+    - Zero Trust Architecture, BeyondCorp
+
+  - Storage & Databases managés
+    - AWS S3, Glacier, EFS, FSx
+    - Azure Blob Storage, File Storage, Data Lake Storage
+    - Google Cloud Storage, Filestore, Bigtable
+    - Bases relationnelles : AWS RDS, Azure SQL Database, Google Cloud SQL
+    - Bases NoSQL : DynamoDB, Cosmos DB, Google Firestore, MongoDB Atlas
+    - Bases en mémoire : Redis Labs, Amazon ElastiCache, Azure Cache for Redis
+
+  - Serverless & Functions
+    - AWS Lambda, Azure Functions, Google Cloud Functions
+    - IBM Cloud Functions (OpenWhisk)
+    - Knative (Kubernetes serverless framework)
+    - Fission, OpenFaaS
+
+  - Monitoring & Observability
+    - AWS CloudWatch, Azure Monitor, Google Stackdriver (Operations)
+    - Prometheus, Grafana
+    - Datadog, New Relic, Dynatrace
+    - ELK Stack (Elasticsearch, Logstash, Kibana)
+    - OpenTelemetry
+
+  - DevOps & CI/CD dans le Cloud
+    - AWS CodePipeline, Azure DevOps, Google Cloud Build
+    - GitHub Actions, GitLab CI/CD, Jenkins, Travis CI, CircleCI
+    - Spinnaker, Harness
+    - Vault (HashiCorp) pour gestion des secrets
+    - SonarQube (qualité code)
+
+  - Multi-cloud & Hybrid Cloud
+    - Anthos (Google)
+    - Azure Arc
+    - AWS Outposts
+    - HashiCorp Consul & Terraform Enterprise
+    - VMware Cloud Foundation
+    - Cloud management platforms : RightScale, Scalr, Morpheus
+
+  - Cloud Cost Management & Governance
+    - AWS Cost Explorer, Azure Cost Management, Google Cloud Billing
+    - CloudHealth, Cloudability, Spot.io
+    - Policies & Quotas : AWS Organizations, Azure Policy, GCP Organization Policies
+
+  - Containers & Runtime
+    - Docker, Podman, Buildah, Kaniko
+    - containerd, CRI-O
+    - OpenShift Container Platform
+    - VMware Harbor (registry)
+    - Google Artifact Registry, AWS ECR, Azure Container Registry
+
+
   
 - Services d’Annuaire & Gestion d’Identité
 
   - Active Directory (Microsoft)
-  - LDAP : OpenLDAP, 389 Directory Server
+    - AD DS (Domain Services)
+    - AD FS (Federation Services)
+    - AD LDS (Lightweight Directory Services)
+    - Azure AD Connect (sync on-premises AD avec Azure AD)
+    - Azure AD Domain Services
+    - Microsoft Entra ID (nouveau nom pour Azure AD)
+    - Microsoft Identity Manager (MIM)
+    - Group Policy Objects (GPO)
+    - Kerberos Authentication
+    - NTLM Authentication
+    - LDAP over SSL/TLS (LDAPS)
+
+  - LDAP (Lightweight Directory Access Protocol)
+    - OpenLDAP
+    - 389 Directory Server (Red Hat)
+    - Apache Directory Server
+    - Microsoft Active Directory (implémentation LDAP)
+    - ApacheDS
+    - OpenDJ
+    - Protocoles associés : SASL, StartTLS
+    - Schémas LDAP (schema extensions, RFC 4512)
+    - Synchronisation LDAP : Syncrepl
+
   - FreeIPA
+    - Intégration Kerberos + LDAP + DNS + CA (Certificate Authority)
+    - Gestion centralisée des identités, politiques et audits
+    - IPA Server, IPA Client
+    - Authentification forte (2FA)
+    - Gestion des hôtes et groupes
+    - Intégration avec SSSD (System Security Services Daemon)
+
   - Azure AD
+    - Azure Active Directory B2B (Business to Business)
+    - Azure Active Directory B2C (Business to Consumer)
+    - Microsoft Entra Verified ID (Identity verification)
+    - OAuth 2.0, OpenID Connect, SAML support
+    - Conditional Access Policies
+    - Identity Protection
+    - Privileged Identity Management (PIM)
+    - Passwordless Authentication (FIDO2, Windows Hello)
+    - Azure AD Domain Services (Managed Domain)
+    - Self-Service Password Reset (SSPR)
+    - Integration avec Microsoft 365, Intune, Teams
+
+  - Protocoles & Standards d’Authentification & Autorisation
+    - Kerberos
+    - NTLM
+    - OAuth 2.0
+    - OpenID Connect (OIDC)
+    - SAML (Security Assertion Markup Language)
+    - RADIUS
+    - TACACS+
+    - SCIM (System for Cross-domain Identity Management)
+    - FIDO2 / WebAuthn (authentification sans mot de passe)
+
+  - IAM (Identity and Access Management) Solutions
+    - Keycloak (Open Source IAM)
+    - Okta
+    - Auth0
+    - Ping Identity
+    - OneLogin
+    - ForgeRock
+    - Centrify
+    - AWS IAM (Identity and Access Management)
+    - Google Cloud IAM
+    - Azure RBAC (Role-Based Access Control)
+
+  - Gestion des accès & politiques
+    - RBAC (Role-Based Access Control)
+    - ABAC (Attribute-Based Access Control)
+    - PBAC (Policy-Based Access Control)
+    - MFA (Multi-Factor Authentication)
+    - Single Sign-On (SSO)
+    - Just-in-Time Access
+    - Identity Federation
+    - Access Reviews / Certifications
+
+  - Gestion des secrets et tokens
+    - OAuth tokens
+    - JWT (JSON Web Tokens)
+    - API Keys
+    - HashiCorp Vault
+    - AWS Secrets Manager
+    - Azure Key Vault
+    - CyberArk
 
 - Partage & Protocoles Réseau
 
   - Samba (partage fichiers Windows/Linux)
+    - SMB (Server Message Block) protocol versions : SMB1, SMB2, SMB3
+    - CIFS (Common Internet File System)
+    - Active Directory integration
+    - Winbind (intégration utilisateurs AD)
+    - Samba Domain Controller (Primary et Backup)
+    - Printing via Samba (CUPS integration)
+    - smbclient (outil ligne de commande)
+    - smb.conf (fichier de configuration)
+    - VFS modules (Virtual File System)
+    - Kerberos authentication support
+    - Encryption and signing support (SMB3)
+  
   - NFS (Network File System)
-  - CIFS
+    - Versions : NFSv3, NFSv4, NFSv4.1, NFSv4.2
+    - Stateless vs Stateful protocol
+    - Kerberos security integration (sec=krb5)
+    - ACL support (Access Control Lists)
+    - NFS over TCP/UDP
+    - Mountd, rpcbind, nfsd (daemons)
+    - automount / autofs
+    - Ganesha NFS (user-space NFS server)
+    - Client-side caching and delegations
+  
+  - CIFS (Common Internet File System)
+    - Souvent confondu avec SMB (implémentation Microsoft)
+    - Compatible avec Samba
+    - Utilisé surtout pour Windows file sharing
+    - Support des locks et journaling
+  
   - FTP / SFTP / SCP
+    - FTP (File Transfer Protocol)
+      - Active vs Passive modes
+      - FTP over TLS/SSL (FTPS)
+      - Anonymous FTP
+      - FTP Servers : vsftpd, proftpd, pure-ftpd
+    - SFTP (SSH File Transfer Protocol)
+      - Fonctionne via SSH (port 22)
+      - Clients : OpenSSH sftp, WinSCP, FileZilla
+      - Authentification par clés ou mots de passe
+      - Support de transferts sécurisés et gestion des permissions
+    - SCP (Secure Copy)
+      - Utilise SSH pour transfert sécurisé
+      - Commande simple pour copier fichiers entre hôtes
+      - Moins flexible que SFTP (pas d’interface interactive)
+  
+  - Autres protocoles et outils associés
+    - Rsync (synchronisation efficace via SSH)
+    - WebDAV (HTTP-based file sharing)
+    - AFP (Apple Filing Protocol, macOS)
+    - NCP (NetWare Core Protocol)
+    - FTP clients graphiques : FileZilla, Cyberduck
+    - FTP servers populaires : IIS FTP, Wu-ftpd
+    - FTP bounce attack (sécurité)
+    - SCP alternatives : rsync, sftp
+    - SMB Direct / SMB over RDMA (pour haute performance)
+    - Distributed File Systems : GlusterFS, CephFS, Lustre
 
 - Gestion de Configuration & Orchestration
 
   - Ansible
+    - Playbooks YAML
+    - Modules intégrés (file, user, yum, apt, systemd, etc.)
+    - Rôles et collections
+    - Ansible Tower / AWX (interface web, gestion centralisée)
+    - Inventaires dynamiques (cloud, VMware, etc.)
+    - Ansible Galaxy (partage de rôles)
+    - Ansible Vault (chiffrement des secrets)
+    - Automation sans agent (agentless)
+    - Intégration avec CI/CD (Jenkins, GitLab CI)
+  
   - Puppet
+    - Puppet DSL (Domain Specific Language)
+    - Manifests et modules
+    - Puppet Enterprise (console, reporting)
+    - Puppet Forge (catalogue de modules)
+    - Agents Puppet sur machines gérées
+    - Puppet Bolt (exécution sans agent)
+    - Resource abstraction layer (RAL)
+    - Classification automatique (node classification)
+    - Reporting et audits de configuration
+  
   - Chef
+    - Recipes et cookbooks (Ruby DSL)
+    - Chef Server, Chef Workstation, Chef Client
+    - Knife (outil en ligne de commande)
+    - Chef Supermarket (catalogue de cookbooks)
+    - InSpec (tests d’infrastructure)
+    - Habitat (packaging d’applications)
+    - Chef Automate (dashboard, compliance, workflow)
+    - Gestion de dépendances et environnement (Berkshelf)
+    - Support du cloud et containers
+  
   - SaltStack
+    - Salt Master / Salt Minion (architecture master/minion)
+    - SLS files (Salt State files, YAML)
+    - Exécutions à distance (remote execution)
+    - Pillar data (données sécurisées)
+    - Salt SSH (gestion sans agent)
+    - Orchestration via Salt Orchestrate
+    - Event-driven automation (reactors)
+    - Salt Cloud (provisioning cloud)
+    - Intégration avec Kubernetes, Docker
+    - Salt Mine (partage d’informations entre minions)
+  
+  - Autres outils & concepts associés
+    - Terraform (Infrastructure as Code, provisioning)
+    - CFEngine (ancien, mais encore utilisé)
+    - Juju (orchestration services)
+    - Consul (service discovery, configuration)
+    - Vault (gestion des secrets, HashiCorp)
+    - Packer (build d’images machine)
+    - GitOps (flux de gestion infra via Git)
+    - CI/CD intégration (GitLab, Jenkins, ArgoCD)
+    - Configuration as Data (définition déclarative)
+    - Idempotence (exécution répétée sans effet indésirable)
 
 ---
 
@@ -356,37 +668,29 @@
 ## Données & Intelligence Artificielle
 
 - Bases de Données
+  - SQL : Oracle, PostgreSQL, MySQL, MariaDB, MSSQL, SQLite, CockroachDB, Amazon Aurora
+  - NoSQL : MongoDB, CouchDB, Cassandra, DynamoDB, Redis, Neo4j, Elasticsearch, HBase, Amazon DocumentDB
+  - Streaming : Apache Kafka, RabbitMQ, Apache Pulsar, Amazon Kinesis, Google Pub/Sub
 
-  - SQL : Oracle, PostgreSQL, MySQL, MariaDB, MSSQL
-  - NoSQL : MongoDB, CouchDB, Cassandra, DynamoDB, Redis, Neo4j
-  - Streaming : Kafka, RabbitMQ, Pulsar
+- Big Data et Data Engineering
+  - Hadoop, Apache Spark, Apache Hive, Apache Pig, Apache Flink, Apache Beam, Presto/Trino, Apache NiFi
 
-- Big Data et Data Enginnering 
+- BI & Data Visualization
+  - Power BI, Tableau, Apache Superset, Grafana, Kibana, Looker, QlikView, Metabase, Google Data Studio
 
-  - Hadoop, Spark, Hive, Pig, Flink
+- Data Science & Machine Learning / Intelligence Artificielle
+  - Environnements : Jupyter Notebook/JupyterLab, RStudio, Google Colab, Anaconda, Spyder, VS Code, Quarto
+  - Librairies/Frameworks : scikit-learn, TensorFlow, PyTorch, Keras, XGBoost, LightGBM, CatBoost, OpenCV, SpaCy
+  - AutoML : H2O.ai, DataRobot, Azure AutoML, Google AutoML, Auto-sklearn
 
-- BI & DataViz
-
-  - Power BI, Tableau, Superset, Grafana, Kibana, Looker
-
-- Data Science & Machine Learning /Intelligence Artificielle
-
-  - Environnement : Jupyter, RStudio, Colab, Anaconda, Spyder
-  - Librairies : scikit-learn, TensorFlow, PyTorch, Keras, XGBoost, LightGBM
-  - AutoML : H2O.ai, DataRobot, Azure AutoML
-
-- ETL & Pipeline
-
-  - Apache Airflow, NiFi, Talend, Pentaho
+- ETL & Pipelines
+  - Outils : Apache Airflow, Apache NiFi, Talend, Pentaho Data Integration, Luigi, DBT, Prefect
 
 - MLOps
-
-  - MLflow, Kubeflow, DVC, Seldon
+  - MLflow, Kubeflow, DVC, Seldon Core, TensorFlow Extended (TFX), Pachyderm, Metaflow
 
 - IA Avancée
-
-  - Deep Learning, LLMs
-  - Éthique de l’IA
+  - Deep Learning, Large Language Models (LLMs), Reinforcement Learning, GANs, Éthique de l’IA, Explainable AI (XAI), Federated Learning
 
 ---
 
@@ -394,38 +698,87 @@
 
 - Concepts Fondamentaux :
 
-  - Principes : CIA (Confidentialité, Intégrité, Disponibilité) 
+  - Principes : CIA (Confidentialité, Intégrité, Disponibilité)
   - AAA (Authentication, Authorization, Accounting)
+  - Modèles de sécurité : Bell-LaPadula, Biba, Clark-Wilson, Brewer-Nash
+  - Paradigmes modernes :
+    - Défense en profondeur
+    - Principe du moindre privilège
+    - Sécurité Zéro Trust (Zero Trust)
+    - Sécurité adaptative (Adaptive Security)
+    - Sécurité basée sur les risques (Risk-Based Security)
+  - Gestion des risques : Analyse des risques, Évaluation des vulnérabilités, Modèles de menace (STRIDE, DREAD)
+  - Gestion des accès : MFA, SSO, IAM, PAM
+  - Surveillance & détection : IDS/IPS, SIEM, UEBA
+  - Conformité et audit : RGPD, HIPAA, PCI-DSS, ISO 27001
+
+- Cryptographie & PKI :
+
+  - Chiffrement symétrique (AES, DES, 3DES)
+  - Chiffrement asymétrique (RSA, ECC, Diffie-Hellman)
+  - Hachage (SHA-2, SHA-3, MD5)
+  - Signatures numériques, certificats SSL/TLS
+  - outils : CyberChef, Hashcat, John the Ripper, RsaCtfTool, CrackStation, Cain & Abel, fcrackzip, stegsolve
+  - Autorités de Certification internes et publiques
+
+- Gestion des Identités & Accès (IAM) & Gestion des Secrets :
+
+  - IAM : Azure AD, Okta, Keycloak, FreeIPA
+  - Gestion des secrets : CyberArk, HashiCorp Vault, AWS Secrets Manager, Azure Key Vault
 
 - Sécurité Réseau & Applicative :
 
   - Pare-feu & Proxy : iptables, pfSense, OPNsense, IPFire, FortiGate, Palo Alto NGFW, Zscaler
   - IDS/IPS : Snort, Suricata, Zeek/Bro
-
   - VPN :
     - Entreprise : OpenVPN, WireGuard, IPsec, StrongSwan, Cisco AnyConnect, FortiClient
     - Grand public : ProtonVPN, NordVPN, ExpressVPN, Mullvad, TunnelBear
-
   - SIEM : Splunk, ELK Stack (ElasticSearch, Logstash, Kibana), Graylog, Wazuh, OSSEC
 
-- PKI & Cryptographie :
-  - Certificats SSL/TLS, OpenSSL, GPG, HashiCorp Vault, Keycloak
-  - Autorités de Certification internes / publiques
-
-- IAM & Gestion des Secrets :
-  - CyberArk, HashiCorp Vault
-
 - Gouvernance, Conformité & Audit :
-  - ISO 27001, RGPD, SOC 2, PCI-DSS
+
+  - Normes : ISO 27001, RGPD, SOC 2, PCI-DSS
   - Outils : OpenVAS, Lynis, Qualys, CIS Benchmarks
 
 - Pentest & Red Team :
+
   - OS : Kali Linux, Parrot OS
   - Outils : Metasploit, Burp Suite, OWASP ZAP, Nikto, Nessus, Nmap, SQLmap, Hydra, John the Ripper, Hashcat, Aircrack-ng, Wifite
 
 - Forensic & Analyse :
-  - Outils : Autopsy, Volatility, FTK, Sleuth Kit, EnCase, Cellebrite
-  - Réseau : Wireshark, tcpdump
+
+  - Autopsy, Sleuth Kit, Volatility, FTK Imager, Wireshark, tcpdump, binwalk, foremost, strings, exiftool, Bulk Extractor, PhotoRec, Scalpel
+
+- PWN / Exploit Binaire :
+    - GDB, pwntools, Ghidra, IDA Pro, Binary Ninja, Radare2, angr, ROPgadget, one_gadget, peda, pwndbg, checksec
+
+- Reverse Engineering :
+    - Ghidra, IDA Pro, Binary Ninja, Hopper, x64dbg, OllyDbg, Frida, apktool, jadx, JEB Decompiler, de4dot, dnSpy, dotPeek, unicorn
+
+- Web :
+    - Burp Suite, OWASP ZAP, sqlmap, wfuzz, dirb, gobuster, nikto, wpscan, FFUF, Postman, curl, mitmproxy, Fiddler, XSStrike, JWT Tool, NoSQLMap
+
+- OSINT :
+    - Maltego, SpiderFoot, theHarvester, Recon-ng, Shodan, Censys, Google Dorks, FOCA, Metagoofil, sherlock, holehe, social-analyzer, Amass, OSINT Framework, Creepy, Twint, GHunt, Sn0int, Skymem, ReconDog
+
+- Steganography :
+    - Steghide, zsteg, stegsolve, stegosuite, exiftool, binwalk, outguess, pngcheck, audacity, Sonic Visualiser, stegcracker
+
+- Mobile :
+    - MobSF, Frida, apktool, JADX, Ghidra, drozer, objection, Magisk, Androguard
+
+- Networking :
+    - Wireshark, tcpdump, Scapy, tshark, Netcat, socat, Nmap, hping3, Ettercap, Bettercap, mitmproxy, Snort, Suricata
+
+- Hardware / IoT :
+    - Bus Pirate, JTAGulator, Chipsec, Logic Analyser (Saleae), OpenOCD, Flashrom, FTDI, RFIDler, Proxmark3, HackRF, GQRX, SDR#
+
+- Miscellaneous :
+    - Python, Bash, Perl, Ruby, pwntools, SageMath, custom scripts, sed, awk, jq
+
+- Social Engineering :
+    - SET (Social-Engineer Toolkit), Gophish, King Phisher, Evilginx2, Modlishka, BeEF
+
 
 ---
 
@@ -463,27 +816,49 @@
 
 - Architecture d’Entreprise :
   - Cadres : TOGAF, Zachman, ArchiMate
-  - Outils : Sparx Enterprise Architect, Bizzdesign, Orbus Software iServer, MEGA International
+  - Outils : Sparx Enterprise Architect, Bizzdesign, Orbus iServer, MEGA International, Avolution ABACUS, HOPEX (MEGA)
 
 - IT Service Management (ITSM) :
-  - Cadres : ITIL v4, COBIT
-  - Outils : ServiceNow, Jira Service Management, BMC Remedy, Ivanti, ManageEngine ServiceDesk Plus
+  - Référentiels : ITIL v4, COBIT 5 / COBIT 2019, ISO/IEC 20000
+  - Outils : ServiceNow, Jira Service Management, BMC Remedy, Ivanti, ManageEngine ServiceDesk Plus, Freshservice, Cherwell
 
 - Gestion de Projet :
-  - Méthodologies : Prince2, PMP (PMI), CAPM, Scrum, Agile, Kanban
-  - Outils : Microsoft Project, Jira, Asana, Trello, Monday.com, Wrike, ClickUp
+  - Méthodologies : PMBOK (PMP, CAPM), Prince2, Agile, Scrum, Kanban, Lean
+  - Outils : Microsoft Project, Jira, Asana, Trello, Monday.com, Wrike, ClickUp, Smartsheet, Redmine
 
 - Continuité & Résilience :
-  - Concepts : PCA (Plan de Continuité d’Activité), PRA (Plan de Reprise d’Activité)
-  - Outils : Fusion Framework System, Archer Business Continuity, Continuity Logic, Castellan
+  - Concepts : PCA (Plan de Continuité d’Activité), PRA (Plan de Reprise d’Activité), Disaster Recovery, Crisis Management
+  - Normes : ISO 22301 (BCMS), ISO 27031 (ICT DR)
+  - Outils : Fusion Framework System, RSA Archer Business Continuity, Castellan, Continuity Logic, Everbridge
 
-- Conformité & Normes :
-  - Normes : ISO 27001, ISO 22301, RGPD, SOC 2, PCI-DSS
-  - Outils : OneTrust, RSA Archer, TrustArc, MetricStream
+- Transformation Digitale & Urbanisation SI :
+  - Concepts : Urbanisation des SI, Green IT, Sobriété Numérique, Cloud Adoption Frameworks
+  - Outils : LeanIX, Planview, MEGA HOPEX, Alfabet, EcoIndex, GreenIT.fr (ressources)
 
-- Transformation Digitale :
-  - Concepts : Urbanisation SI, Green IT & Sobriété Numérique
-  - Outils : LeanIX, Planview, GreenIT.fr (ressources), EcoIndex
+- Gouvernance, Conformité & Normes :
+  - Référentiels NIST :
+    - NIST SP 800-53 : Security and Privacy Controls
+    - NIST CSF : Cybersecurity Framework
+    - NIST SP 800-37 : Risk Management Framework (RMF)
+    - NIST SP 800-30 : Risk Assessments
+    - NIST SP 800-171 : Protection of CUI
+    - NIST SP 800-207 : Zero Trust Architecture
+  - Normes ISO/IEC :
+    - ISO/IEC 27001 : Management de la Sécurité de l’Information (ISMS)
+    - ISO/IEC 27002 : Contrôles de sécurité
+    - ISO/IEC 27005 : Gestion des risques
+    - ISO/IEC 27701 : Privacy Information Management
+    - ISO/IEC 20000 : ITSM
+    - ISO/IEC 38500 : Gouvernance des SI
+    - ISO 22301 : Continuité d’activité
+    - ISO 31000 : Management du risque
+    - ISO 9001 : Qualité
+    - ISO/IEC 29100 : Privacy Framework
+    - IEC 62443 : Sécurité des systèmes industriels et OT/ICS
+  - Bonnes Pratiques Complémentaires :
+    - COBIT, ITIL, PMBOK, Prince2, Agile/Scrum
+  - Outils GRC & Conformité :
+    - RSA Archer, MetricStream, OneTrust, TrustArc, ISMS.online, LogicManager, Drata, Vanta, ServiceNow GRC, Qualys, Tenable.io
 
 ---
 
